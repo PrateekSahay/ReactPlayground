@@ -7,8 +7,14 @@ import Welcome from './Components/ClassComponent';
 function App() {
   return (
     <div className="App">
-    <Greet />
-    <Welcome />
+    <Greet name = "Prateek"/>
+    <Greet name ="jai">
+      <h1>Props children as parameter</h1>
+    </Greet>
+    <Welcome name ="jai"/>
+    <Welcome name ="Prateek">
+      <button>Props children</button>
+    </Welcome>
     </div>
   );
 }
